@@ -20,11 +20,21 @@
 
     </FrameLayout>
 
-    <TextView
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_gravity="start"-->
+        <!--android:background="#FFF"-->
+        <!--android:text="This is Menu"-->
+        <!--android:textSize="30dp" />-->
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
-        android:background="#FFF"
-        android:text="This is Menu"
-        android:textSize="30dp" />
+        app:headerLayout="@layout/nav_header"
+        app:menu="@menu/nav_menu" />
+
+
 </android.support.v4.widget.DrawerLayout>
